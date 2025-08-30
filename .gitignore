@@ -25,9 +25,11 @@ Z3st.xcodeproj/project.xcworkspace/xcuserdata/
 .env
 *.secret
 
+# Supabase SQL migrations (managed outside VCS)
+supabase/*.sql
+
 # Fastlane (if used)
 fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
-

@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1BD085932E62E68E00999528 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 1BD085922E62E68E00999528 /* Auth */; };
+		1BD085952E62E68E00999528 /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = 1BD085942E62E68E00999528 /* Functions */; };
+		1BD085972E62E68E00999528 /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = 1BD085962E62E68E00999528 /* PostgREST */; };
+		1BD085992E62E68E00999528 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = 1BD085982E62E68E00999528 /* Realtime */; };
+		1BD0859B2E62E68E00999528 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 1BD0859A2E62E68E00999528 /* Storage */; };
+		1BD0859D2E62E68E00999528 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 1BD0859C2E62E68E00999528 /* Supabase */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		1BFF8ED52E62D70900CB6A87 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,11 +36,25 @@
 		1BFF8EC72E62D70800CB6A87 /* Z3st.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Z3st.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BFF8ED42E62D70900CB6A87 /* Z3stTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Z3stTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BFF8EDE2E62D70900CB6A87 /* Z3stUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Z3stUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BFF90012E62E9A600CB6A87 /* Z3stWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Z3stWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		1BB8908E2E62FC04003B67F6 /* Exceptions for "Z3st" folder in "Z3st" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 1BFF8EC62E62D70800CB6A87 /* Z3st */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		1BFF8EC92E62D70800CB6A87 /* Z3st */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1BB8908E2E62FC04003B67F6 /* Exceptions for "Z3st" folder in "Z3st" target */,
+			);
 			path = Z3st;
 			sourceTree = "<group>";
 		};
@@ -45,6 +68,11 @@
 			path = Z3stUITests;
 			sourceTree = "<group>";
 		};
+		1BFF90002E62E9A600CB6A87 /* Z3stWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Z3stWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +80,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BD0859D2E62E68E00999528 /* Supabase in Frameworks */,
+				1BD085972E62E68E00999528 /* PostgREST in Frameworks */,
+				1BD085952E62E68E00999528 /* Functions in Frameworks */,
+				1BD085932E62E68E00999528 /* Auth in Frameworks */,
+				1BD0859B2E62E68E00999528 /* Storage in Frameworks */,
+				1BD085992E62E68E00999528 /* Realtime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +103,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1BFF90042E62E9A600CB6A87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +119,7 @@
 				1BFF8EC92E62D70800CB6A87 /* Z3st */,
 				1BFF8ED72E62D70900CB6A87 /* Z3stTests */,
 				1BFF8EE12E62D70900CB6A87 /* Z3stUITests */,
+				1BFF90002E62E9A600CB6A87 /* Z3stWidget */,
 				1BFF8EC82E62D70800CB6A87 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +130,7 @@
 				1BFF8EC72E62D70800CB6A87 /* Z3st.app */,
 				1BFF8ED42E62D70900CB6A87 /* Z3stTests.xctest */,
 				1BFF8EDE2E62D70900CB6A87 /* Z3stUITests.xctest */,
+				1BFF90012E62E9A600CB6A87 /* Z3stWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +155,12 @@
 			);
 			name = Z3st;
 			packageProductDependencies = (
+				1BD0859C2E62E68E00999528 /* Supabase */,
+				1BD085922E62E68E00999528 /* Auth */,
+				1BD085942E62E68E00999528 /* Functions */,
+				1BD085962E62E68E00999528 /* PostgREST */,
+				1BD085982E62E68E00999528 /* Realtime */,
+				1BD0859A2E62E68E00999528 /* Storage */,
 			);
 			productName = Z3st;
 			productReference = 1BFF8EC72E62D70800CB6A87 /* Z3st.app */;
@@ -163,6 +212,28 @@
 			productReference = 1BFF8EDE2E62D70900CB6A87 /* Z3stUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		1BFF90022E62E9A600CB6A87 /* Z3stWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BFF90062E62E9A600CB6A87 /* Build configuration list for PBXNativeTarget "Z3stWidget" */;
+			buildPhases = (
+				1BFF90032E62E9A600CB6A87 /* Sources */,
+				1BFF90042E62E9A600CB6A87 /* Frameworks */,
+				1BFF90052E62E9A600CB6A87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				1BFF90002E62E9A600CB6A87 /* Z3stWidget */,
+			);
+			name = Z3stWidget;
+			packageProductDependencies = (
+			);
+			productName = Z3stWidget;
+			productReference = 1BFF90012E62E9A600CB6A87 /* Z3stWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -195,6 +266,9 @@
 			);
 			mainGroup = 1BFF8EBE2E62D70800CB6A87;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1BD085912E62E68E00999528 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1BFF8EC82E62D70800CB6A87 /* Products */;
 			projectDirPath = "";
@@ -203,6 +277,7 @@
 				1BFF8EC62E62D70800CB6A87 /* Z3st */,
 				1BFF8ED32E62D70900CB6A87 /* Z3stTests */,
 				1BFF8EDD2E62D70900CB6A87 /* Z3stUITests */,
+				1BFF90022E62E9A600CB6A87 /* Z3stWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -229,6 +304,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1BFF90052E62E9A600CB6A87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -247,6 +329,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1BFF8EDA2E62D70900CB6A87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BFF90032E62E9A600CB6A87 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -395,11 +484,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Z3st/Z3st.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D9CEWCC85U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Z3st/Info.plist;
+				INFOPLIST_KEY_AppGroupID = "$(APP_GROUP_ID)";
+				INFOPLIST_KEY_BGTaskSchedulerPermittedIdentifiers = com.z3st.refresh;
+				INFOPLIST_KEY_CFBundleURLTypes = "{\n    CFBundleURLName = \"app.z3st.z3st\";\n    CFBundleURLSchemes =     (\n        z3st\n    );\n}";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Capture a profile photo.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Read water intake to sync with Apple Health.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Write water intake to Apple Health.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow Z3st to access your photos to choose a profile picture.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -423,11 +522,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Z3st/Z3st.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D9CEWCC85U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Z3st/Info.plist;
+				INFOPLIST_KEY_AppGroupID = "$(APP_GROUP_ID)";
+				INFOPLIST_KEY_BGTaskSchedulerPermittedIdentifiers = com.z3st.refresh;
+				INFOPLIST_KEY_CFBundleURLTypes = "{\n    CFBundleURLName = \"app.z3st.z3st\";\n    CFBundleURLSchemes =     (\n        z3st\n    );\n}";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Capture a profile photo.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Read water intake to sync with Apple Health.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Write water intake to Apple Health.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow Z3st to access your photos to choose a profile picture.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -458,6 +567,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.z3st.z3st.Z3stTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG OFFLINE_TESTS";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -477,6 +587,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.z3st.z3st.Z3stTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = OFFLINE_TESTS;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -515,6 +626,58 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Z3st;
+			};
+			name = Release;
+		};
+		1BFF90072E62E9A600CB6A87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D9CEWCC85U;
+				EXCLUDED_SOURCE_FILE_NAMES = Info.plist;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Z3stWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.z3st.z3st.Z3st.Z3stWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1BFF90082E62E9A600CB6A87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D9CEWCC85U;
+				EXCLUDED_SOURCE_FILE_NAMES = Info.plist;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Z3stWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.z3st.z3st.Z3st.Z3stWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -557,7 +720,60 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		1BFF90062E62E9A600CB6A87 /* Build configuration list for PBXNativeTarget "Z3stWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BFF90072E62E9A600CB6A87 /* Debug */,
+				1BFF90082E62E9A600CB6A87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1BD085912E62E68E00999528 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1BD085922E62E68E00999528 /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1BD085912E62E68E00999528 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		1BD085942E62E68E00999528 /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1BD085912E62E68E00999528 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		1BD085962E62E68E00999528 /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1BD085912E62E68E00999528 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		1BD085982E62E68E00999528 /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1BD085912E62E68E00999528 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		1BD0859A2E62E68E00999528 /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1BD085912E62E68E00999528 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		1BD0859C2E62E68E00999528 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1BD085912E62E68E00999528 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1BFF8EBF2E62D70800CB6A87 /* Project object */;
 }

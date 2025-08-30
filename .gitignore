@@ -2,11 +2,16 @@
 DerivedData/
 build/
 xcuserdata/
+**/*.xcworkspace/xcuserdata/
+**/*.xcuserdata/
 *.xcuserstate
+*.xcscmblueprint
 *.xccheckout
+*.moved-aside
 
 # Swift Package Manager
 .build/
+.swiftpm/
 
 # CocoaPods (if used)
 Pods/
@@ -20,10 +25,24 @@ Z3st.xcodeproj/project.xcworkspace/xcuserdata/
 # App artifacts
 *.ipa
 *.dSYM
+*.xcarchive
 
 # Secrets and local env files
 .env
 *.secret
+.env.*
+.DS_Store
+.vscode/
+.idea/
+*.mobileprovision
+*.provisionprofile
+*.p12
+*.cer
+*.key
+*.pem
+*.der
+*.crt
+*.csr
 
 # Supabase SQL migrations (managed outside VCS)
 supabase/*.sql

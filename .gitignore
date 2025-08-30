@@ -52,3 +52,72 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
+# Swift / Xcode .gitignore
+
+# Xcode build artifacts
+build/
+DerivedData/
+*.xcarchive
+
+# Xcode user data (never commit)
+xcuserdata/
+**/*.xcworkspace/xcuserdata/
+**/*.xcuserdata/
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+*.moved-aside
+
+# Swift Package Manager
+.swiftpm/
+.build/
+# Legacy SPM (rarely used now)
+Packages/
+
+# CocoaPods (if used)
+Pods/
+
+# Carthage (if used)
+Carthage/Build/
+
+# Fastlane (if used)
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# IDE settings
+.idea/
+.vscode/
+
+# OS / misc
+.DS_Store
+
+# App binaries and symbols
+*.ipa
+*.dSYM
+*.dSYM.zip
+
+# Provisioning / certificates (sensitive)
+*.mobileprovision
+*.provisionprofile
+*.p12
+*.cer
+*.key
+*.pem
+*.der
+*.crt
+*.csr
+
+# Swift Playgrounds
+*.playground/Timeline.xctimeline
+*.playground/playground.xcworkspace
+
+# Local environment files (sensitive)
+.env
+.env.*
+*.secret
+
+# Project-specific
+Z3st.xcodeproj/project.xcworkspace/xcuserdata/
+supabase/*.sql

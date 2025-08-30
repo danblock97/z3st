@@ -1,0 +1,33 @@
+# Xcode
+DerivedData/
+build/
+xcuserdata/
+*.xcuserstate
+*.xccheckout
+
+# Swift Package Manager
+.build/
+
+# CocoaPods (if used)
+Pods/
+
+# Carthage (if used)
+Carthage/Build/
+
+# SwiftPM resolved file can stay, but workspace state should be ignored
+Z3st.xcodeproj/project.xcworkspace/xcuserdata/
+
+# App artifacts
+*.ipa
+*.dSYM
+
+# Secrets and local env files
+.env
+*.secret
+
+# Fastlane (if used)
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
